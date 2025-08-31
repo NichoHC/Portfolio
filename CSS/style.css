@@ -1,5 +1,115 @@
+/*----------Reset------------*/
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---------------Styles for the stars at background--------------*/
+
 #stars {
     position: fixed;
     inset: 0;
     z-index: -1;
+}
+
+/*--------------------Styles for the navBar----------------------------*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav-menu-main{
+    color: black;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.nav-menu-main ul, .nav-menu-main a{
+    color: black;
+    list-style: none;
+    padding: 0 15px;
+}
+.nav-menu-main li {
+    margin: 50px 0;
+}
+.nav-menu-main a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; 
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px; 
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu-main a:hover {
+    color: #6c63ff; 
+}
+
+.quickAccess{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-theme, .btn-leng{
+    background-color: transparent;
+    border:none;
+    font-size: 1.2rem;
+}
+
+
+.activeBar{
+    opacity: 1;
+    transform: translateX(0);
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    body{
+        margin: 0 10%;
+    }
+    .btn-toggle{
+        display: none;
+    }
+    .nav-menu-main {
+        position: static;
+        height: auto;    
+        width: auto;        
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+
+    .nav-menu-main ul {
+    margin: 0;
+    padding: 0;
+    display: flex; /* para que también se organice horizontalmente */
+    gap: 20px;
+    }
+    header
+    {
+        justify-content: space-around;
+    }
 }

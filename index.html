@@ -5,13 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/btn-toogle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav id="navBar"class="nav-menu-main">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sobre mi</a></li>
+                <li><a href="">Proyectos</a></li>
+            </ul>
+        </nav>
+        <div class="quickAccess">
+            <button id="leng" class="btn-leng">Esp</button>
+            <button id="theme"class="btn-theme"><i class="fa-solid fa-sun"></i></button>
+            <button id="btn-toggle" class="btn-toggle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </button>
+        </div>
+    </header>
     <main>
     <canvas id="stars"></canvas>
     </main>
     <footer></footer>
 </body>
 <script src="JS/canvas.js"> </script>
+<script src="JS/toggle.js"></script>
 </html>
