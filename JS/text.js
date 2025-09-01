@@ -37,26 +37,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function agregarItems() {
+
     const lista = document.getElementById("items");
     let lengIdioma = document.getElementById('leng').textContent;
     const nav = textos[lengIdioma].nav; 
 
+     // Seccion intro y titulo
     const title=document.getElementById("title");
     const basicInfo=textos[lengIdioma].basicInfo;
+
+    // Seccion proyectos
+    const titleProyect= document.getElementById('title-proyects');
+    const subTitleProyect=document.getElementById('subtitle-proyects');
+    const infoProyect=document.getElementById("info-proyects");
+    const gitProyect= document.getElementById('git-proyect');
+    const demoProyect= document.getElementById('demo-proyect');
+    const proyects=textos[lengIdioma].proyects1;
+    const links=textos[lengIdioma].links;
 
     const intro=document.getElementById('introduction');
     lista.innerHTML = `
         <li><a>${nav.home}</a></li>
-        <li><a>${nav.about}</a></li>
         <li><a>${nav.proyect}</a></li>
+        <li><a>${nav.about}</a></li>
     `;
 
-        
+    // Seccion intro y titulo
     title.textContent = basicInfo.title;
     title.classList.remove("title-es", "title-en");
     void title.offsetWidth;
     title.classList.add(lengIdioma === "es" ? "title-es" : "title-en");
-
     intro.textContent=basicInfo.info;
+
+
+    // Seccion proyectos
+    titleProyect.textContent=proyects.title
+    subTitleProyect.textContent=proyects.subtitle
+    infoProyect.textContent=proyects.info
+    gitProyect.innerHTML=`<i class="fa-brands fa-github"></i>${links.code}`
+    demoProyect.innerHTML=`<i class="fa-solid fa-up-right-from-square"></i>${links.Demo}`
 
 }

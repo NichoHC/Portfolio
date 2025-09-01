@@ -9,6 +9,16 @@
         "basicInfo":{
             "title": "Desarrollador de software",
             "info": "Hola, soy Nicholas. Me especializo en desarrollo frontend y disfruto dar vida a las ideas a través del código. Mi meta es convertirme en desarrollador full stack, ampliando mis habilidades para dominar tanto el lado visual como la lógica detrás de cada aplicación."
+        },
+        "proyects1":{
+            "title":"Proyectos",
+            "subtitle":"Tienda EcoGaia",
+            "info":"Una tienda online ecológica desarrollada con HTML, CSS y JavaScript. Incluye carrito de compras y buscador dinámico."
+            
+        },
+        "links":{
+            "code":"Código",
+            "Demo":"Demo"
         }
     
     },
@@ -21,6 +31,15 @@
         "basicInfo":{
             "title": "Software Developer",
             "info": "Hi, I'm Nicholas. I specialize in frontend development and enjoy bringing ideas to life through code. I'm working towards becoming a full stack developer, expanding my skills to master both the visual side and the logic behind every application."
+        },
+        "proyects1":{
+            "title":"Proyects",
+            "subtitle":"EcoGaia Shop",
+            "info":"An eco-friendly online store developed with HTML, CSS, and JavaScript. It includes a shopping cart and a dynamic search feature."
+        },
+        "links":{
+            "code":"Code",
+            "Demo":"Demo"
         }
     }
 }

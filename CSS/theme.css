@@ -9,12 +9,11 @@
     --Menu-Nav:black;
     --github-bg: #000000;
     --github-color: #ffffff;
-
     --linkedin-bg: #0A66C2;
     --linkedin-color: #ffffff;
-
     --cv-bg: #6c757d;
     --cv-color: #ffffff;
+    --card-bg: #f8f9fa;
 }
 
 /*  Modo oscuro */
@@ -32,6 +31,7 @@ body.dark-mode {
     --linkedin-color: #0A66C2;
     --cv-bg: #2a2a2a;
     --cv-color: #bbbbbb;
+    --card-bg: #1e1e1e; 
 }
 
 /* -------------------- Styles -------------------- */
