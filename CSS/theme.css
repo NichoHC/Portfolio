@@ -1,0 +1,79 @@
+/*  Variables base */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --nav-bg: #f8f9fa;
+    --nav-text: #1a1a1a;
+    --accent-color: #6c63ff;
+    --link-hover: #4b47cc;
+    --Menu-Nav:black;
+    --github-bg: #000000;
+    --github-color: #ffffff;
+
+    --linkedin-bg: #0A66C2;
+    --linkedin-color: #ffffff;
+
+    --cv-bg: #6c757d;
+    --cv-color: #ffffff;
+}
+
+/*  Modo oscuro */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #eaeaea;
+    --nav-bg: #1e1e1e;
+    --nav-text: #eaeaea;
+    --accent-color: #bb86fc;
+    --link-hover: #9b66e6;
+    --Menu-Nav:#ffffff;
+    --github-bg: #1f1f1f;
+    --github-color: #f5f5f5;
+    --linkedin-bg: #2a2a2a;
+    --linkedin-color: #0A66C2;
+    --cv-bg: #2a2a2a;
+    --cv-color: #bbbbbb;
+}
+
+/* -------------------- Styles -------------------- */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🔹 Navbar */
+header {
+    background-color: var(--nav-bg);
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu-main a {
+    color: var(--nav-text);
+    transition: color 0.3s ease;
+}
+
+.nav-menu-main a:hover {
+    color: var(--accent-color);
+}
+
+/* 🔹 Botones */
+.btn-theme, .btn-leng {
+    color: var(--nav-text);
+    transition: color 0.3s ease;
+}
+
+/* 🔹 Quick Access (opcional) */
+.quickAccess {
+    gap: 12px;
+}
+
+/* 🔹 Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+}

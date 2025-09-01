@@ -1,0 +1,26 @@
+{
+    "es": {
+        "nav": {
+        "home": "Inicio",
+        "about": "Acerca de mi",
+        "proyect": "Proyectos"
+        
+        },
+        "basicInfo":{
+            "title": "Desarrollador de software",
+            "info": "Hola, soy Nicholas. Me especializo en desarrollo frontend y disfruto dar vida a las ideas a través del código. Mi meta es convertirme en desarrollador full stack, ampliando mis habilidades para dominar tanto el lado visual como la lógica detrás de cada aplicación."
+        }
+    
+    },
+    "en": {
+        "nav": {
+        "home": "Home",
+        "about": "About me",
+        "proyect": "Proyects"
+        },
+        "basicInfo":{
+            "title": "Software Developer",
+            "info": "Hi, I'm Nicholas. I specialize in frontend development and enjoy bringing ideas to life through code. I'm working towards becoming a full stack developer, expanding my skills to master both the visual side and the logic behind every application."
+        }
+    }
+}

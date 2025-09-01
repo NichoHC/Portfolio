@@ -25,7 +25,6 @@ header{
 }
 
 .nav-menu-main{
-    color: black;
     transform: translateX(-100%);
     position: fixed;
     top: 0;
@@ -33,30 +32,26 @@ header{
     width: 50%;
     height: 100vh;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .nav-menu-main ul, .nav-menu-main a{
-    color: black;
+    
     list-style: none;
-    padding: 0 15px;
+    
 }
 .nav-menu-main li {
     margin: 50px 0;
 }
 .nav-menu-main a {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem; 
     font-weight: 500;
     color: black;
     text-decoration: none;
-    padding: 5px 15px; 
+    padding: 5px; 
     display: inline-block;
     transition: color 0.3s ease-in-out;
 }
 
-.nav-menu-main a:hover {
-    color: #6c63ff; 
-}
 
 .quickAccess{
     display: flex;
@@ -73,16 +68,147 @@ header{
 }
 
 
+.btn-theme:hover,.btn-leng:hover{
+    color: #6c63ff; 
+}
 .activeBar{
     opacity: 1;
     transform: translateX(0);
-    background-color: #ffffff;
+    background-color: var(--nav-bg);
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+
+/*---------------------MAIN------------------*/
+
+
+/*Primera seccion*/
+
+.animation-title{
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+}
+
+
+.animation-title.title-es {
+    width: 26ch;
+    animation: typing 4s steps(26) infinite alternate, blink .5s infinite step-end alternate;
+}
+
+
+.animation-title.title-en {
+    width: 19ch;
+    animation: typing2 4s steps(19) infinite alternate, blink .5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from{width: 0}
+    to { width: 26ch }
+    
+}
+@keyframes typing2 {
+    from{width: 0}
+    to { width: 19ch }
+    
+}
+@keyframes blink {
+    50%{border-color: transparent;}
+    
+}
+.title{
+    font-size: 1.4rem;
+}
+.info-basic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+.intro{
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 1.1rem;        
+    line-height: 1.6;          
+    color: var(--nav-text);                
+    max-width: 600px;          
+    margin: 1rem auto 2rem;    
+    text-align: justify;  
+}
+
+/* Contenedor */
+.containerBtns {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem; 
+    margin: 1.5rem 0;
+}
+
+/* Estilos de enlaces */
+.containerBtns a {
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;        
+    max-width: 250px;  
+}
+
+/* Íconos */
+.containerBtns a i {
+    font-size: 1.2rem;
+}
+
+/* Botones individuales */
+.containerBtns a:nth-child(1) {
+    background: var(--github-bg);
+    color: var(--github-color);
+}
+.containerBtns a:nth-child(2) {
+    background: var(--linkedin-bg);
+    color: var(--linkedin-color);
+}
+.containerBtns a:nth-child(3) {
+    background: var(--cv-bg);
+    color: var(--cv-color);
+}
+
+/* Hover efecto */
+.containerBtns a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Versión desktop */
+@media (min-width: 600px) {
+    .containerBtns {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .containerBtns a {
+        width: auto;        
+        min-width: 120px;
+    }
 }
 
 
 
 
+
+
+
+/*---------------Query---------------------------*/
 
 
 
@@ -111,5 +237,21 @@ header{
     header
     {
         justify-content: space-around;
+        background-color: #ffffff;
     }
+}
+
+
+
+
+
+/*-------------------Animation body------------------------------*/
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
