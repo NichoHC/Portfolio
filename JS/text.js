@@ -48,12 +48,7 @@ function agregarItems() {
 
     // Seccion proyectos
     const titleProyect= document.getElementById('title-proyects');
-    const subTitleProyect=document.getElementById('subtitle-proyects');
-    const infoProyect=document.getElementById("info-proyects");
-    const gitProyect= document.getElementById('git-proyect');
-    const demoProyect= document.getElementById('demo-proyect');
-    const proyects=textos[lengIdioma].proyects1;
-    const links=textos[lengIdioma].links;
+    const proyects=textos[lengIdioma].titleProyect;
 
     const intro=document.getElementById('introduction');
     lista.innerHTML = `
@@ -62,7 +57,7 @@ function agregarItems() {
         <li><a>${nav.about}</a></li>
     `;
 
-    // Seccion intro y titulo
+     // Seccion intro y titulo
     title.textContent = basicInfo.title;
     title.classList.remove("title-es", "title-en");
     void title.offsetWidth;
@@ -72,9 +67,42 @@ function agregarItems() {
 
     // Seccion proyectos
     titleProyect.textContent=proyects.title
-    subTitleProyect.textContent=proyects.subtitle
-    infoProyect.textContent=proyects.info
-    gitProyect.innerHTML=`<i class="fa-brands fa-github"></i>${links.code}`
-    demoProyect.innerHTML=`<i class="fa-solid fa-up-right-from-square"></i>${links.Demo}`
-
+    renderProjects(lengIdioma);
 }
+
+function renderProjects(lang) {
+    const projectsContainer = document.querySelector(".projects-grid");
+    projectsContainer.innerHTML = ""; // limpiar
+
+    const projects = textos[lang].proyects;
+    const linksText = textos[lang].links;
+
+    projects.forEach(proj => {
+        const card = document.createElement("div");
+        card.classList.add("project-card");
+
+        card.innerHTML = `
+            <div class="project-media">
+                <img src="${proj.img}" alt="${proj.subtitle}" class="project-img">
+                <video src="${proj.video}" muted loop playsinline></video>
+            </div>
+            <div class="project-info">
+                <h3>${proj.subtitle}</h3>
+                <p>${proj.info}</p>
+                <div class="project-links">
+                    <a href="${proj.links.code}" target="_blank"><i class="fa-brands fa-github"></i> ${linksText.code}</a>
+                    <a href="${proj.links.demo}" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> ${linksText.Demo}</a>
+                </div>
+            </div>
+        `;
+
+        // Hover video
+        const video = card.querySelector("video");
+        card.addEventListener("mouseenter", () => { video.currentTime = 0; video.play(); });
+        card.addEventListener("mouseleave", () => { video.pause(); video.currentTime = 0; });
+
+        projectsContainer.appendChild(card);
+    });
+}
+
+

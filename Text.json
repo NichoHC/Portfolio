@@ -2,7 +2,7 @@
     "es": {
         "nav": {
         "home": "Inicio",
-        "about": "Acerca de mi",
+        "about": "Acerca de mí",
         "proyect": "Proyectos"
         
         },
@@ -10,16 +10,19 @@
             "title": "Desarrollador de software",
             "info": "Hola, soy Nicholas. Me especializo en desarrollo frontend y disfruto dar vida a las ideas a través del código. Mi meta es convertirme en desarrollador full stack, ampliando mis habilidades para dominar tanto el lado visual como la lógica detrás de cada aplicación."
         },
-        "proyects1":{
-            "title":"Proyectos",
-            "subtitle":"Tienda EcoGaia",
-            "info":"Una tienda online ecológica desarrollada con HTML, CSS y JavaScript. Incluye carrito de compras y buscador dinámico."
-            
+        
+        "titleProyect":{
+            "title":"Proyectos"
         },
-        "links":{
-            "code":"Código",
-            "Demo":"Demo"
+        "proyects": [
+        {
+            "subtitle": "Tienda EcoGaia",
+            "info": "Una tienda online ecológica desarrollada con HTML, CSS y JavaScript. Incluye carrito de compras y buscador dinámico.",
+            "img": "img/Proyecto1/proyecto1.png",
+            "video": "img/Proyecto1/2025-09-01 13-42-35.mp4",
+            "links": { "code": "https://github.com/NichoHC/TiendaEcoGaia", "demo": "https://nichohc.github.io/TiendaEcoGaia/" }
         }
+    ],"links": { "code": "Código", "Demo": "Demo" }
     
     },
     "en": {
@@ -32,14 +35,22 @@
             "title": "Software Developer",
             "info": "Hi, I'm Nicholas. I specialize in frontend development and enjoy bringing ideas to life through code. I'm working towards becoming a full stack developer, expanding my skills to master both the visual side and the logic behind every application."
         },
-        "proyects1":{
-            "title":"Proyects",
-            "subtitle":"EcoGaia Shop",
-            "info":"An eco-friendly online store developed with HTML, CSS, and JavaScript. It includes a shopping cart and a dynamic search feature."
+        "titleProyect":{
+            "title":"Proyects"
         },
-        "links":{
-            "code":"Code",
-            "Demo":"Demo"
+        "proyects": [
+        {
+                "subtitle": "EcoGaia Shop",
+                "info": "An eco-friendly online store developed with HTML, CSS, and JavaScript. It includes a shopping cart and a dynamic search feature.",
+                "img": "img/Proyecto1/proyecto1.png",
+                "video": "img/Proyecto1/2025-09-01 13-42-35.mp4",
+                "links": { 
+                    "code": "https://github.com/NichoHC/TiendaEcoGaia", 
+                    "demo": "https://nichohc.github.io/TiendaEcoGaia/" 
+                }
         }
+        
+    ],"links": { "code": "Code", "Demo": "Demo" }
+    
     }
 }

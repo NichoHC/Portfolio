@@ -38,3 +38,5 @@ document.querySelectorAll('.project-card').forEach(card => {
         video.currentTime = 0; //
     });
 });
+
+
