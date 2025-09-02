@@ -3,7 +3,7 @@ let textos={};
 
 async function cargarTexto() {
     try {
-        const respuesta = await fetch("/Text.json");
+        const respuesta = await fetch("./Text.json");
         textos = await respuesta.json();
         agregarItems()
     } catch (error) {
