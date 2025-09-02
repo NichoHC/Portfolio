@@ -1,0 +1,110 @@
+/* Sección About */
+.about {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#title-about {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Contenedor principal */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Foto */
+.about-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+}
+
+/* Texto */
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+
+/* Lista de habilidades */
+/* Lista de habilidades */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.skill-list span {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: default;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover general */
+.skill-list span:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Estilos dedicados */
+.skill-list .html {
+    background: #e34c26;
+}
+
+.skill-list .css {
+    background: #264de4;
+}
+
+.skill-list .js {
+    background: #f7df1e;
+    color: #000;
+}
+
+.skill-list .git {
+    background: #f05033;
+}
+
+.skill-list .react {
+    background: #61dafb;
+    color: #000;
+}
+.skill-list .bootstrap {
+    background: #7952b3;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+/* Desktop */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .about-text {
+        flex: 1;
+    }
+    .about-photo {
+        flex-shrink: 0;
+    }
+}

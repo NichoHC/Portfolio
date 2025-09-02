@@ -22,7 +22,11 @@
             "video": "img/Proyecto1/2025-09-01 13-42-35.mp4",
             "links": { "code": "https://github.com/NichoHC/TiendaEcoGaia", "demo": "https://nichohc.github.io/TiendaEcoGaia/" }
         }
-    ],"links": { "code": "Código", "Demo": "Demo" }
+    ],"links": { "code": "Código", "Demo": "Demo" },
+    "About":{
+        "title":"Acerca de mí",
+        "info":"Soy Ingeniero Mecatrónico de la Universidad Autónoma, pero con el tiempo descubrí que mi verdadera pasión está en el desarrollo web. Siempre me ha gustado aprender, experimentar y dar forma a nuevas ideas. Fuera del código disfruto los videojuegos, la música y pasar tiempo en la naturaleza. Me considero curioso, perseverante y en constante búsqueda de crecimiento. Mi meta es consolidarme como frontend developer y seguir avanzando hasta convertirme en full stack."
+    }
     
     },
     "en": {
@@ -50,7 +54,11 @@
                 }
         }
         
-    ],"links": { "code": "Code", "Demo": "Demo" }
+    ],"links": { "code": "Code", "Demo": "Demo" },
+    "About":{
+        "title":"About me",
+        "info":"I am a Mechatronics Engineer from Universidad Autónoma, but over time I discovered that my true passion lies in web development. I’ve always enjoyed learning, experimenting, and bringing new ideas to life. Outside of coding, I enjoy video games, music, and spending time in nature. I consider myself curious, persistent, and always eager to grow. My goal is to establish myself as a frontend developer and keep moving forward until I become a full stack developer."
+    }
     
     }
 }

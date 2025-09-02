@@ -50,6 +50,12 @@ function agregarItems() {
     const titleProyect= document.getElementById('title-proyects');
     const proyects=textos[lengIdioma].titleProyect;
 
+
+    //Seccion about
+    const titleAbout=document.getElementById("title-about");
+    const infoAbout=document.getElementById('info-about');
+    const about=textos[lengIdioma].About;
+
     const intro=document.getElementById('introduction');
     lista.innerHTML = `
         <li><a>${nav.home}</a></li>
@@ -68,6 +74,10 @@ function agregarItems() {
     // Seccion proyectos
     titleProyect.textContent=proyects.title
     renderProjects(lengIdioma);
+
+    //Seccion about
+    titleAbout.textContent=about.title;
+    infoAbout.textContent=about.info;
 }
 
 function renderProjects(lang) {
