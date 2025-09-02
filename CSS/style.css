@@ -5,13 +5,16 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+*{
+    scroll-behavior: smooth;
+}
 
 /*---------------Styles for the stars at background--------------*/
 
 #stars {
     position: fixed;
     inset: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 /*--------------------Styles for the navBar----------------------------*/
@@ -33,6 +36,7 @@ body{
     height: 100vh;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    z-index: 3;
 }
 .nav-menu-main ul{
     list-style: none;
@@ -44,7 +48,6 @@ body{
 .nav-menu-main a {
     font-size: 1.2rem; 
     font-weight: 500;
-    color: black;
     text-decoration: none;
     padding: 5px; 
     display: inline-block;
@@ -77,19 +80,8 @@ body{
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
 
-/*fixed nav bar*/
 
-#fixed-navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--bg-header);
-    display: none;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgb(0, 0, 0);
-    padding: 0.5rem 1rem; /* más compacto */
-    transition: all 0.3s ease;
-}
+
 /*---------------------MAIN------------------*/
 
 
@@ -136,6 +128,7 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 2em;
+    scroll-margin-top: 200px;
 }
 
 

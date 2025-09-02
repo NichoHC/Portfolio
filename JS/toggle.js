@@ -8,6 +8,8 @@ theme.addEventListener('click',cambiarTema);
 const leng= document.getElementById('leng');
 leng.addEventListener('click',cambiarIdioma)
 
+const links = document.querySelectorAll('#navBar ul li a');
+
 function agregarClase() {
     btnTog.classList.toggle("active");
     navBar.classList.toggle("activeBar");
@@ -30,6 +32,13 @@ function cambiarIdioma(){
 }
 
 
+
+navBar.addEventListener('click', (e) => {
+    if (e.target.tagName.toLowerCase() === 'a') {
+        navBar.classList.remove('activeBar');
+        btnTog.classList.remove('active');
+    }
+});
 document.querySelectorAll('.project-card').forEach(card => {
     const video = card.querySelector('video');
     card.addEventListener('mouseenter', () => video.play());

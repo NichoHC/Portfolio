@@ -58,9 +58,9 @@ function agregarItems() {
 
     const intro=document.getElementById('introduction');
     lista.innerHTML = `
-        <li><a>${nav.home}</a></li>
-        <li><a>${nav.proyect}</a></li>
-        <li><a>${nav.about}</a></li>
+        <li><a href="#home">${nav.home}</a></li>
+        <li><a href="#projects">${nav.proyect}</a></li>
+        <li><a href="#about">${nav.about}</a></li>
     `;
 
      // Seccion intro y titulo
